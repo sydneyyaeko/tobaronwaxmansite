@@ -1,0 +1,364 @@
+<head>
+<title>Petach Eynayim</title>
+
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+
+<meta name="description"
+content="Fireworks Splice HTML">
+
+<!-- Fireworks 3.0  Dreamweaver 3.0 target. 
+Created Wed Jun 06 16:06:16 GMT-0500 2001 -->
+
+<script>
+
+/* preload images and
+create image objects to hold them */
+
+if(document.images){    /* browser
+understands image objects */
+
+        
+        myImages = new Array ();
+       
+for(i=0;i<36;i++)
+                myImages[i] = new Image;
+
+       
+myImages[0].src = "peytacheynayimimages/newhome_r1_c1.jpg";
+        myImages[1].src =
+"peytacheynayimimages/newhome_r1_c2.jpg";
+        myImages[2].src = "peytacheynayimimages/newhome_r1_c3.jpg";
+       
+myImages[3].src = "peytacheynayimimages/newhome_r1_c4.jpg";
+        myImages[4].src =
+"peytacheynayimimages/newhome_r1_c5.jpg";
+        myImages[5].src = "peytacheynayimimages/newhome_r1_c6.jpg";
+   
+	myImages[6].src = "peytacheynayimimages/newhome_r2_c1.jpg";
+        myImages[7].src =
+"peytacheynayimimages/newhome_r2_c2.jpg";
+        myImages[8].src = "peytacheynayimimages/newhome_r2_c3.jpg";
+       
+myImages[9].src = "peytacheynayimimages/newhome_r2_c4.jpg";
+        myImages[10].src =
+"peytacheynayimimages/newhome_r2_c5.jpg";
+        myImages[11].src = "peytacheynayimimages/newhome_r2_c6.jpg";
+       
+myImages[12].src = "peytacheynayimimages/newhome_r3_c1.jpg";
+        myImages[13].src =
+"peytacheynayimimages/newhome_r3_c2.jpg";
+        myImages[14].src = "peytacheynayimimages/newhome_r3_c3.jpg";
+       
+myImages[15].src = "peytacheynayimimages/newhome_r3_c4.jpg";
+        myImages[16].src =
+"peytacheynayimimages/newhome_r3_c5.jpg";
+        myImages[17].src = "peytacheynayimimages/newhome_r3_c6.jpg";
+       
+myImages[18].src = "peytacheynayimimages/newhome_r4_c1.jpg";
+        myImages[19].src =
+"peytacheynayimimages/newhome_r4_c2.jpg";
+        myImages[20].src = "peytacheynayimimages/newhome_r4_c3.jpg";
+       
+myImages[21].src = "peytacheynayimimages/newhome_r4_c4.jpg";
+        myImages[22].src =
+"peytacheynayimimages/newhome_r4_c5.jpg";
+        myImages[23].src = "peytacheynayimimages/newhome_r4_c6.jpg";
+       
+myImages[24].src = "peytacheynayimimages/newhome_r5_c1.jpg";
+        myImages[25].src =
+"peytacheynayimimages/newhome_r5_c2.jpg";
+        myImages[26].src = "peytacheynayimimages/newhome_r5_c3.jpg";
+       
+myImages[27].src = "peytacheynayimimages/newhome_r5_c4.jpg";
+        myImages[28].src =
+"peytacheynayimimages/newhome_r5_c5.jpg";
+        myImages[29].src = "peytacheynayimimages/newhome_r5_c6.jpg";
+       
+myImages[30].src = "peytacheynayimimages/newhome_r6_c1.jpg";
+        myImages[31].src =
+"peytacheynayimimages/newhome_r6_c2.jpg";
+        myImages[32].src = "peytacheynayimimages/newhome_r6_c3.jpg";
+       
+myImages[33].src = "peytacheynayimimages/newhome_r6_c4.jpg";
+    	myImages[34].src =
+"peytacheynayimimages/newhome_r6_c5.jpg";
+        myImages[35].src = "peytacheynayimimages/newhome_r6_c6.jpg";
+     
+      
+ 
+
+        
+
+
+        var currentColumn = 2;
+        var currentRow = 2;
+
+       
+timeDelay = 200;
+        timeDelayMin = 10;
+        timeDelayMax =
+500;
+}
+
+
+
+function randomImages(){
+        if (document.images){
+
+               
+/* first, figure out new image LOCATION to change */
+
+                
+          
+     /* update Column */
+
+                if(currentColumn == 0)
+                
+       currentColumn = 1;
+                else if(currentColumn == 5)
+           
+            currentColumn = 4;
+                else{
+
+                       
+randomNum = Math.random() * 1000;       /* a random number between 0 and 1000...
+*/
+                        randomNum = Math.round(randomNum);      /* now, round
+it to an even number */
+                        randomNum %= 3;         /* now it
+is between 0 and 2....*/
+                        randomNum -= 1;         /* now
+it is between -1 and 1  */
+
+                        currentColumn = currentColumn
++ randomNum;
+
+                        if(currentColumn > 5)
+                     
+          currentColumn = 5;
+                        if(currentColumn <0)
+       
+                        currentColumn = 0;
+
+                }
+
+                /*
+update Row */
+
+                if(currentRow == 0)
+                       
+currentRow = 1;
+                else if(currentRow == 5)
+                       
+currentRow = 4;
+                else{
+
+                        randomNum =
+Math.random() * 1000;       /* a random number between 0 and 1000... */
+         
+              randomNum = Math.round(randomNum);      /* now, round it to an even
+number */
+                        randomNum %= 3;         /* now it is between 0
+and 2....*/
+                        randomNum -= 1;         /* now it is between
+-1 and 1  */
+                        currentRow = currentRow + randomNum;
+       
+                if(currentRow > 5)
+                                currentRow =
+5;
+                        if(currentRow <0)
+                               
+currentRow = 0;
+
+        
+                }
+                
+                /*
+now, convert Rows and Columns into an image number.... */
+
+               
+imageNum = currentRow * 6; 
+                imageNum += currentColumn;
+
+         
+      imageNum += 1;   /* this is because I start counting at 1 with image names
+*/
+				
+  
+                /* now - put a random image into that
+location */
+
+                randomNum = Math.random() * 35; /* between 0 and 35
+*/
+                
+                randomNum = Math.round(randomNum);
+
+
+        
+       document["newhome"+imageNum].src =
+myImages[randomNum].src;
+				
+                /* now make the time
+delay variable as well.... */
+
+                randomNum = Math.random() * 1000;
+
+               randomNum = Math.round(randomNum);
+                randomNum %= 3;
+        /* now between 0 and 2 */
+                randomNum -= 1;         /* now
+-1 and 1 */
+                randomNum *= 100;
+                        
+
+         
+      timeDelay += randomNum;
+
+
+                if (timeDelay < timeDelayMin)
+   
+                    timeDelay = timeDelayMin;
+
+                if (timeDelay >
+timeDelayMax)
+                                timeDelay = timeDelayMax;
+         
+      
+
+                
+
+                
+               
+setTimeout("randomImages()",timeDelay);
+                
+
+       
+}
+}
+
+
+
+
+
+</script>
+</head>
+
+<body bgcolor="#000000" text="ffffcc" link="ffcc33" vlink="cc33333"
+onLoad="randomImages()">
+
+<!--The following section is an HTML table which
+reassembles the sliced image in a browser.--> <!--Copy the table section
+including the opening and closing table tags, and paste the data where-->
+
+<!--you want the reassembled image to appear in the destination document. -->
+
+<!-------------------------- BEGIN COPYING THE HTML HERE
+----------------------------> <!-- Image with table -->
+
+<p>&nbsp;</p>
+<div align="center">   <table
+border="0" cellpadding="0" cellspacing="0" width="420">
+    <!-- fwtable
+fwsrc="Untitled" fwbase="newhome.jpg" -->         <tr valign="top"><!-- row 1
+-->       <td><img name="newhome1" src="images/newhome_r1_c1.jpg" width="70"
+height="57" border="0"></td>
+      <td><img name="newhome2"
+src="images/newhome_r1_c2.jpg" width="70" height="57" border="0"></td>
+      <td><img
+name="newhome3" src="images/newhome_r1_c3.jpg" width="70" height="57" border="0"></td>
+
+     <td><img name="newhome4" src="images/newhome_r1_c4.jpg" width="70" height="57"
+border="0"></td>
+      <td><img name="newhome5" src="images/newhome_r1_c5.jpg"
+width="70" height="57" border="0"></td>
+      <td><img name="newhome6"
+src="images/newhome_r1_c6.jpg" width="70" height="57" border="0"></td>
+          </tr>
+
+   <tr valign="top"><!-- row 2 -->       <td><img name="newhome7"
+src="images/newhome_r2_c1.jpg" width="70" height="58" border="0"></td>
+      <td><img
+name="newhome8" src="images/newhome_r2_c2.jpg" width="70" height="58" border="0"></td>
+     <td><img name="newhome9" src="images/newhome_r2_c3.jpg" width="70" height="58"
+border="0"></td>
+      <td><img name="newhome10" src="images/newhome_r2_c4.jpg"
+width="70" height="58" border="0"></td>
+
+      <td><img name="newhome11"
+src="images/newhome_r2_c5.jpg" width="70" height="58" border="0"></td>
+      <td><img
+name="newhome12" src="images/newhome_r2_c6.jpg" width="70" height="58" border="0"></td>
+
+         </tr>
+    <tr valign="top"><!-- row 3 -->       <td><img
+name="newhome13" src="images/newhome_r3_c1.jpg" width="70" height="56" border="0"></td>
+
+     <td><img name="newhome14" src="images/newhome_r3_c2.jpg" width="70" height="56"
+border="0"></td>
+      <td><img name="newhome15" src="images/newhome_r3_c3.jpg"
+width="70" height="56" border="0"></td>
+      <td><img name="newhome16"
+src="images/newhome_r3_c4.jpg" width="70" height="56" border="0"></td>
+
+      <td><img
+name="newhome17" src="images/newhome_r3_c5.jpg" width="70" height="56" border="0"></td>
+
+     <td><img name="newhome18" src="images/newhome_r3_c6.jpg" width="70" height="56"
+border="0"></td>
+          </tr>
+    <tr valign="top"><!-- row 4 -->      <td><img name="newhome19" src="images/newhome_r4_c1.jpg" width="70" height="57"
+border="0"></td>
+      <td><img name="newhome20" src="images/newhome_r4_c2.jpg"
+width="70" height="57" border="0"></td>
+      <td><img name="newhome21"
+src="images/newhome_r4_c3.jpg" width="70" height="57" border="0"></td>
+      <td><img
+name="newhome22" src="images/newhome_r4_c4.jpg" width="70" height="57" border="0"></td>
+
+     <td><img name="newhome23" src="images/newhome_r4_c5.jpg" width="70" height="57"
+border="0"></td>
+      <td><img name="newhome24" src="images/newhome_r4_c6.jpg"
+width="70" height="57" border="0"></td>
+         </tr>
+    <tr valign="top"><!--
+row 5 -->       <td><img name="newhome25" src="images/newhome_r5_c1.jpg" width="70"
+height="57" border="0"></td>
+      <td><img name="newhome26"
+src="images/newhome_r5_c2.jpg" width="70" height="57" border="0"></td>
+      <td><img
+name="newhome27" src="images/newhome_r5_c3.jpg" width="70" height="57" border="0"></td>
+
+     <td><img name="newhome28" src="images/newhome_r5_c4.jpg" width="70" height="57"
+border="0"></td>
+      <td><img name="newhome29" src="images/newhome_r5_c5.jpg"
+width="70" height="57" border="0"></td>
+
+      <td><img name="newhome30"
+src="images/newhome_r5_c6.jpg" width="70" height="57" border="0"></td>
+         </tr>
+   <tr valign="top"><!-- row 6 -->       <td><img name="newhome31"
+src="images/newhome_r6_c1.jpg" width="70" height="57" border="0"></td>
+      <td><img
+name="newhome32" src="images/newhome_r6_c2.jpg" width="70" height="57" border="0"></td>
+
+     <td><img name="newhome33" src="images/newhome_r6_c3.jpg" width="70" height="57"
+border="0"></td>
+      <td><img name="newhome34" src="images/newhome_r6_c4.jpg"
+width="70" height="57" border="0"></td>
+      <td><img name="newhome35"
+src="images/newhome_r6_c5.jpg" width="70" height="57" border="0"></td>
+      <td><img
+name="newhome36" src="images/newhome_r6_c6.jpg" width="70" height="57" border="0"></td>
+
+        </tr></table>
+     <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3375038-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></body></html>

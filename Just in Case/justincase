@@ -1,0 +1,68 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Favorite Icon -->
+	<link rel="shortcut icon" href="">
+	<!-- Computer Character Set -->
+	<meta charset="UTF-8">
+	<title>Tobaron Waxman</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+	<nav>
+		<ul>
+			<li class="dropdown">
+   				<a href="#" class="dropbtn">PORTFOLIO</a>
+		    	<div class="dropdown-content">
+		     	<a href="#">VOICE</a>
+		     	<a href="#">PERFORMANCE</a>
+		     	<ul>
+		     		<li><a href="">The 71st Face</a>
+		     		<li><a href="#">Singing with architecture overscore</a></li>
+					<li><a href="#">Opshernish</a></li>
+					<li><a href="#">self portrait as pshat</a></li>
+					<li><a href="#">Fear of a Bearded Planet</a></li>
+					<li><a href="#">Mechitza Project</a></li>
+					<li><a href="#">Block of Ice + 1/60</a></li>
+					<li><a href="#">GenderfluXXXorz</a></li>
+					<li><a href="#">Letter from the 4th Son</a></li>
+					<li><a href="#">Still Life: Israel Eats Itself</a></li>
+				</ul>
+				<a href="#">OBJECTS+INSTALLATION</a>
+			 	<a href="#">PROJECTS</a>
+				<a href="#">CURATION</a>
+				<a href="#">BIBLIOGRAPHY/CV+bio</a>
+				<a href="#">FILM, VIDEO, PROJECTIONS</a>
+				<a href="#">PHOTO</a>
+				<a href="#">COMRADES + COLLABORATORS</a>
+				    </div></li>
+			<li><a href=" "> NEWS </a></li>
+			<li><a href=""> LINKS/TEXTS/CV </a></li>
+			<li><a href="mailto:studio@tobaron.com"> CONTACT </a></li>
+		</ul>
+	</nav>
+<body>
+<center><img src="Images/tobaron1.jpg"></center>
+</body>		
+    </div>
+  </li>
+</ul>
+
+
+<!-- <li id='exhibit_18' class='exhibit_title'><a href='http://www.calderharben.com/index.php/project/ah-but-what-can-you-do-you/'>ah, but what can you do you?</a></li>
+<li id='exhibit_10' class='exhibit_title'><a href='http://www.calderharben.com/index.php/project/flagging/'>FLAGGING</a></li>
+<li id='exhibit_9' class='exhibit_title'><a href='http://www.calderharben.com/index.php/project/some-people-are-just-lucky/'>Some people are just Lucky</a></li>
+<li id='exhibit_17' class='exhibit_title'><a href='http://www.calderharben.com/index.php/project/today-we-are-dancers-and-ghosts-of-dead-miners/'>today we are dancers...</a></li>
+<li id='exhibit_20' class='exhibit_title'><a href='http://www.calderharben.com/index.php/project/ant/'>ANT</a></li>
+<li id='exhibit_29' class='exhibit_title'><a href='http://www.calderharben.com/index.php/project/fat-fur-flesh/'>Fat, Fur, Flesh</a></li> -->
+
+
+
+<!-- <div class='bot'><div style="position: absolute; bottom: 10px;">© 2015 Cal Harben  </div><br />
+</div> -->
+
+
+
+</html>
